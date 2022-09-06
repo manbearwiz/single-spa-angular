@@ -4,7 +4,7 @@ import { getFileContent } from '@schematics/angular/utility/test';
 import * as JSON5 from 'json5';
 
 import { Schema as NgAddOptions } from '../schema';
-import { createWorkspace, createTestRunner, VERSION } from './utils';
+import { createWorkspace, createTestRunner, VERSION } from '../../test-utils';
 
 const workspaceOptions = {
   name: 'ss-workspace',

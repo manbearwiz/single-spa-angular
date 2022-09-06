@@ -1,6 +1,6 @@
 import { UnitTestTree } from '@angular-devkit/schematics/testing';
 
-import { createTestRunner, VERSION } from './utils';
+import { createTestRunner, VERSION } from '../../test-utils';
 
 const workspaceOptions = {
   name: 'workspace',

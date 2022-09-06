@@ -7,6 +7,7 @@ module.exports = {
       tsconfig: {
         esModuleInterop: true,
         downlevelIteration: false,
+        lib: ['es2018', 'dom', 'ES2019.Array'],
       },
     },
   },

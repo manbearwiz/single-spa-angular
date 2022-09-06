@@ -1,7 +1,8 @@
 import { join } from 'path';
 import { SchematicTestRunner, UnitTestTree } from '@angular-devkit/schematics/testing';
 
-const collectionPath = join(__dirname, '../../schematics.json');
+const collectionPath = join(__dirname, '../schematics.json');
+const migrationPath = join(__dirname, '../migration.json');
 
 export const VERSION: string = require('@angular/core/package.json').version;
 
@@ -24,4 +25,8 @@ export async function createWorkspace<WorkspaceOptions extends object, AppOption
 
 export function createTestRunner(): SchematicTestRunner {
   return new SchematicTestRunner('single-spa-angular', collectionPath);
+}
+
+export function createMigrationTestRunner(): SchematicTestRunner {
+  return new SchematicTestRunner('single-spa-angular', migrationPath);
 }
